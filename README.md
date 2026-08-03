@@ -5,13 +5,14 @@
 A 3D VLA framework that aligns the input and output within a shared 2D space in both pre-training and fine-tuning, enabling strong data efficiency and achieves impressive performance in both basic and generalization settings.
 
 
-[\[📄Paper\]](https://arxiv.org/abs/2506.07961)  [\[🏠Project Page\]](https://bridgevla.github.io/)  [\[📊Dataset\]](https://huggingface.co/datasets/LPY/BridgeVLA)  [\[🤗Checkpoints\]](https://huggingface.co/datasets/LPY/BridgeVLA)
+[\[📄Paper\]](https://arxiv.org/abs/2506.07961)  [\[🏠Project Page\]](https://bridgevla.github.io/)  [\[🤗Checkpoints\]](https://huggingface.co/datasets/LPY/BridgeVLA)  [\[🪄ModelScope\]](https://modelscope.cn/models/susetiankong/bridgevla_plus)
 
 
 </div>
 
 
 ## 🔥 News
+* **`2026.08`** 🌟 We release [BridgeVLA++](https://bridgevla-plus.github.io/), a journal extension of BridgeVLA with a unified spatio-temporal memory, two new memory-dependent benchmarks, and bimanual manipulation. Its code now lives on the [`main` branch](https://github.com/BridgeVLA/BridgeVLA/tree/main) of this repo, while this `bridgevla` branch keeps the original BridgeVLA code. The released BridgeVLA checkpoints are now under [`checkpoints/bridgevla/`](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla) in the dataset repo, with an identical [ModelScope mirror](https://modelscope.cn/models/susetiankong/bridgevla_plus).
 * **`2026.04.06`** 🌟 We release [MV-VDP](https://lpy1219.github.io/MV-VDP-Web/), a spatio-temporal aware video action model that leverages the similar projection and back-projection strategy. It demonstrates great data-efficiency, robustness, generalization and interpretability. We invite you to check it out!
 * **`2025.09.20`** 🌟 BridgeVLA was accepted by NeurIPS 2025! 🥳🥳🥳
 * **`2025.06.15`** 🌟 We are proud to introduce BridgeVLA, a model designed to bridge the gap between VLM backbone and VLA by aligning input and output within a shared 2D space during both pre-training and fine-tuning.
@@ -64,7 +65,7 @@ bash ./install_gembench.sh
 ## 🚀 Training
 If you want to reproduce our results, please use the same training hyperparameters in the config file. **Do not forget to modify the corresponding saving path in the file before running the following code.**
 1. **Pre-training:**
-We use the object detection data in the RoboPoint dataset to pre-train the model. We upload the data and checkpoints [here](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/). With the `pretrain/pretrain.py` file, you can do three things:
+We use the object detection data in the RoboPoint dataset to pre-train the model. We upload the data ([`pretrain_data/`](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/pretrain_data)) and the pre-trained checkpoint ([`checkpoints/pretrain/`](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/pretrain)). With the `pretrain/pretrain.py` file, you can do three things:
 * `visualiztion`: This function is used to visualize the pre-training dataset.
 * `pre-training`: This function is used to pre-train the Paligemma model on the dataset .
 * `evaluation`: This function is used to test the pre-trained checkpoints.
