@@ -13,7 +13,7 @@ A 3D VLA framework that aligns the input and output within a shared 2D space in 
 
 ## 🔥 News
 * **`2026.08.05`** 🌟 We release [BridgeVLA++](https://bridgevla-plus.github.io/), which augments BridgeVLA with a unified spatio-temporal memory, two new memory-dependent benchmarks, and bimanual manipulation. Its code now lives on the [`main` branch](https://github.com/BridgeVLA/BridgeVLA/tree/main) of this repo, while this `bridgevla` branch keeps the original BridgeVLA code. The released BridgeVLA checkpoints are now under [`checkpoints/bridgevla/`](https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints/bridgevla) in the dataset repo, with an identical [ModelScope mirror](https://modelscope.cn/models/susetiankong/bridgevla_plus).
-* **`2026.04.06`** 🌟 We release [MV-VDP](https://lpy1219.github.io/MV-VDP-Web/), a spatio-temporal aware video action model that leverages the similar projection and back-projection strategy. It demonstrates great data-efficiency, robustness, generalization and interpretability. We invite you to check it out!
+* **`2026.04.06`** 🌟 We release [SpatialVAM](https://spatialvam.github.io/), a spatio-temporal aware video action model that leverages the similar projection and back-projection strategy. It demonstrates great data-efficiency, robustness, generalization and interpretability. We invite you to check it out!
 * **`2025.09.20`** 🌟 BridgeVLA was accepted by NeurIPS 2025! 🥳🥳🥳
 * **`2025.06.15`** 🌟 We are proud to introduce BridgeVLA, a model designed to bridge the gap between VLM backbone and VLA by aligning input and output within a shared 2D space during both pre-training and fine-tuning.
 
